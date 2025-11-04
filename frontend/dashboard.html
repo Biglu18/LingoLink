@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - VoiceBridge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container dashboard">
+    <h1>🎧 VoiceBridge</h1>
+    <h3>Translate your audio below</h3>
+
+    <div class="upload-box">
+      <input type="file" id="audioFile" accept="audio/*">
+      <div class="selectors">
+        <label>From:</label>
+        <select id="sourceLang">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+        </select>
+
+        <label>To:</label>
+        <select id="targetLang">
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <button id="translateBtn" class="btn">Translate Audio</button>
+    </div>
+
+    <div class="output">
+      <h4>Translated Audio:</h4>
+      <audio id="resultAudio" controls></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Flask==3.0.3
+requests==2.32.3
+googletrans==4.0.0rc1
+gTTS==2.5.3
+SpeechRecognition==3.10.4
+pydub==0.25.1
+Werkzeug==3.0.3
+PyAudio==0.2.14        # For microphone input (if used later)
+deep-translator==1.11.4 # Alternative translator if googletrans fails
